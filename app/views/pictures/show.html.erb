@@ -27,7 +27,7 @@
 
 <p>
   <strong>Photo:</strong>
-  <%= @picture.photo %>
+  <%= image_tag(@picture.photo_url, :width => 800) if @picture.photo.present? %>
 </p>
 
 <%= link_to 'Edit', edit_picture_path(@picture) %> |
