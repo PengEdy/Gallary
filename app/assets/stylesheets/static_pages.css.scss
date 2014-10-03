@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "foundation/components/side-nav";
-@import "foundation";
+
 
 .custom-side-nav {
   @include side-nav(
@@ -34,6 +34,10 @@ a:hover {
   color: white;
 }
 
+p {
+  font-color: #999;
+}
+
 footer {
   color: #999;
 }
@@ -42,6 +46,6 @@ h1,h2,h3,h4 {
   color: white;
 }
 
-.sidebar, .pic-slide {
+.sidebar, .pic-slide, .page-info {
   margin-top: 80px;
 }

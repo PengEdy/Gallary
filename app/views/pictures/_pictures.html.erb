@@ -6,8 +6,20 @@
     bullets:false;
     slide_number:false;">
     <% @pictures.each do |pic| %>
-    <li><%= image_tag(pic.photo_url, alt: pic.name) %></li>
-    <div class="orbit-caption">pic.name</div>
+    <li>
+      <%= image_tag(pic.photo_url, alt: pic.name) %>
+      <div class="orbit-caption">
+        <h3><%= pic.name %>
+          <small>
+            &nbsp;&nbsp;
+            made by <%= pic.author %>
+            &nbsp;&nbsp;
+            <%= pic.description %>
+            <%= link_to "More Info", picture_path(pic), :class => "button tiny right" %>
+          </small>
+        </h3>
+      </div>
+    </li>
     <% end %>
   </ul>
 </div>

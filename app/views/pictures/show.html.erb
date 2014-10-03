@@ -1,30 +1,26 @@
-<p>
-  <strong>Name:</strong>
-  <%= @picture.name %>
-</p>
+<div class="large-9 push-3 columns page-info">
+    <h3>
+      <%= @picture.name %>
+      <small>
+        &nbsp;&nbsp;
+        made by <%= @picture.author %>
+    </h3>
+    <p>
+      <strong>Author info:</strong>
+      <%= @picture.author_info %>
+    </p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @picture.category_id %>
-</p>
+    <p>
+      <strong>Category:</strong>
+      <%= @picture.category_id %>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @picture.description %>
-</p>
+    <p>
+      <strong>Description:</strong>
+      <%= @picture.description %>
+    </p>
+    <p>
+      <%= image_tag(@picture.photo_url, :width => 800) if @picture.photo.present? %>
+    </p>
 
-<p>
-  <strong>Author:</strong>
-  <%= @picture.author %>
-</p>
-
-<p>
-  <strong>Author info:</strong>
-  <%= @picture.author_info %>
-</p>
-
-<p>
-  <strong>Photo:</strong>
-  <%= image_tag(@picture.photo_url, :width => 800) if @picture.photo.present? %>
-</p>
-
+</div>
