@@ -1,32 +1,13 @@
-<div class="large-9 push-3 columns">
+<div class="large-9 push-3 columns pic-slide">
   <ul class="example-orbit" data-orbit data-options="animation:fade;
-    pause_on_hover:true;
+    pause_on_hover:false;
     animation_speed:500;
-    navigation_arrows:true;
-    bullets:false;">
-    <li>
-      <%= image_tag("1.jpg", alt: "slide 1") %>
-      <div class="orbit-caption">Steins Gate.</div>
-    </li>
-    <li class-"active">
-      <%= image_tag("2.jpg", alt: "slide 2") %>
-      <div class="orbit-caption">Colourful picture.</div>
-    </li>
-    <li>
-      <%= image_tag("3.jpg", alt: "slide 3") %>
-      <div class="orbit-caption">Great bottles with fantastic paint.</div>
-    </li>
-    <li>
-      <%= image_tag("4.jpg", alt: "slide 3") %>
-      <div class="orbit-caption">This picture is strange, I don't know what it is.</div>
-    </li>
-    <li>
-      <%= image_tag("12.jpg", alt: "slide 3") %>
-      <div class="orbit-caption">Wow! This is a blood elf Palading holding the legend sword!</div>
-    </li>
-    <li>
-      <%= image_tag("13.jpg", alt: "slide 3") %>
-      <div class="orbit-caption">This one is a dark angle.</div>
-    </li>
+    navigation_arrows:false;
+    bullets:false;
+    slide_number:false;">
+    <% @pictures.each do |pic| %>
+    <li><%= image_tag(pic.photo_url, alt: pic.name) %></li>
+    <div class="orbit-caption">pic.name</div>
+    <% end %>
   </ul>
 </div>

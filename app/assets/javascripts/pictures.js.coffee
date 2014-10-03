@@ -5,9 +5,10 @@ $(document).foundation({
   orbit: {
     animation: 'fade',
     timer_speed: 5000,
-    pause_on_hover: true,
+    pause_on_hover: false,
     animation_speed: 500,
-    navigation_arrows: true,
-    bullets: false
+    navigation_arrows: false,
+    bullets: false,
+    slide_number: false
   }
 })
