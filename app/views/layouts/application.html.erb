@@ -22,7 +22,7 @@
     <div class="row">
       <%= yield %>
       <div class="large-3 pull-9 columns sidebar">
-        <%= image_tag("logo.svg") %>
+        <%= link_to image_tag("logo.svg"), root_path %>
         <%= render "categories/categories.html.erb" %>
       </div>
     </div>
