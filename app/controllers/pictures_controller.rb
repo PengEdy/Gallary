@@ -4,7 +4,7 @@ class PicturesController < ApplicationController
   # GET /pictures
   # GET /pictures.json
   def index
-    @category = Category.find_by(:id)
+    @category = Category.find_by(params[:id])
     if @category != nil
       @pictures = @category.picture
     else
