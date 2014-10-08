@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :categories
   get '/about' => 'static_pages#about'
   get '/contact' => 'static_pages#contact'
+  get '/admin' => 'static_pages#admin'
   root 'pictures#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
