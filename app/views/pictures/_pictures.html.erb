@@ -12,7 +12,7 @@
         <h3><%= pic.name %>
           <small>
             &nbsp;&nbsp;
-            made by <%= pic.author %>
+            made by <%= pic.author.name %>
             &nbsp;&nbsp;
             <%= pic.description %>
             <%= link_to "More Info", picture_path(pic), :class => "button tiny right" %>
