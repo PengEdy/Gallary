@@ -1,6 +1,7 @@
 class StaticPagesController < ApplicationController
-  def index
-   # category = Category.find_by(:id)
-   # picture = category.picture
+  def about
+  end
+
+  def contact
   end
 end

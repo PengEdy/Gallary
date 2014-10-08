@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :pictures
-
   resources :categories
-
+  get '/about' => 'static_pages#about'
+  get '/contact' => 'static_pages#contact'
   root 'pictures#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
