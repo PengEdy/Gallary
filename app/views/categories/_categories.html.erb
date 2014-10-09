@@ -1,5 +1,5 @@
 <ul class="custom-side-nav ">
   <% Category.all.each do |category| %>
-  <li><%= link_to category.name.upcase, category_path(category) , :class => "right" %></li>
+  <li><%= link_to category.name.upcase, category_path(category) %></li>
   <% end %>
 </ul>
