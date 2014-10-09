@@ -59,3 +59,13 @@ h1,h2,h3,h4 {
 .example-orbit li img {
   margin: 0 auto;
 }
+
+.ie img[src*=".svg"] {
+  width: 100%;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src*=".svg"] {
+    width: 100%;
+  }
+}
