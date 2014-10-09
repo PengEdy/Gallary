@@ -9,7 +9,8 @@
     <li>
       <%= image_tag(pic.photo_url, alt: pic.name) %>
       <div class="orbit-caption">
-        Caption Session.
+        <%= pic.name %>&nbsp;by&nbsp;
+        <%= pic.author.name %>
       </div>
     </li>
     <% end %>
