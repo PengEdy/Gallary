@@ -3,11 +3,14 @@
     pause_on_hover:false;
     animation_speed:400;
     navigation_arrows:false;
-    bullets:false;
+    bullets:true;
     slide_number:false;">
     <% @pictures.each do |pic| %>
     <li>
       <%= image_tag(pic.photo_url, alt: pic.name) %>
+      <div class="orbit-caption">
+        Caption Session.
+      </div>
     </li>
     <% end %>
   </ul>

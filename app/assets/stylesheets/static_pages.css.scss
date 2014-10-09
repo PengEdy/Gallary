@@ -2,16 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "foundation/components/side-nav";
-$side-nav-padding: rem-calc(5 0);
+$side-nav-padding: rem-calc(0 0);
 $side-nav-list-margin: rem-calc(0 0 0 0);
 $side-nav-list-position: right;
-
+$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
 .custom-side-nav {
   @include side-nav(
     $divider-color: #333,
     $link-color: #999,
     $link-color-hover: white,
-    $font-size: rem-calc(13)
+    $font-size: rem-calc(10)
   );
 }
 
