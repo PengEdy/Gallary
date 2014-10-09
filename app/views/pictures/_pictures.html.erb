@@ -9,8 +9,31 @@
     <li>
       <%= image_tag(pic.photo_url, alt: pic.name) %>
       <div class="orbit-caption">
-        <%= pic.name %>&nbsp;by&nbsp;
-        <%= pic.author.name %>
+        <div class="row">
+          <div class="large-7 columns">
+            <%= pic.name %>
+          </div>
+          <div class="large-2 columns">
+            by&nbsp;<%= pic.author.name %>
+          </div>
+          <div class="large-1 columns">
+            <a class="btn">More</a>
+          </div>
+        </div>
+        <div class="row pic-info">
+          <div class="large-7 columns">
+            <%= pic.description %>
+            <p>This is description of the picture.</p>
+          </div>
+          <div class="large-2 columns">
+            <%= pic.author.info %>
+            <p>This is the author of the picture.</p>
+          </div>
+          <div class="large-1 columns">
+            &nbsp;
+          </div>
+        </div>
+
       </div>
     </li>
     <% end %>

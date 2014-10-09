@@ -4,10 +4,6 @@
 @import "foundation/components/buttons";
 @import "foundation/components/orbit";
 $include-html-button-classes: $include-html-classes;
-
-$button-font-color: #fff;
-$button-font-color-alt: #333;
-
 $include-html-orbit-classes: $include-html-classes ;
 
 $orbit-caption-bg: rgba(30,30,30, 0.5);
@@ -15,3 +11,6 @@ $orbit-caption-padding: rem-calc(6 6);
 
 @import 'foundation';
 $body-font-color: #999;
+.pic-info {
+  display: none;
+}

@@ -12,3 +12,11 @@ $(document).foundation({
     slide_number: false
   }
 })
+
+$ ->
+  $('.btn').click ->
+    if $(this).text() is "More"
+      $(this).text("Hide")
+    else
+      $(this).text("More")
+    $('.pic-info').toggle()

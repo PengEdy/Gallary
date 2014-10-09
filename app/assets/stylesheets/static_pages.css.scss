@@ -2,10 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "foundation/components/side-nav";
+@import "foundation/components/buttons";
+
 $side-nav-padding: rem-calc(0 0);
 $side-nav-list-margin: rem-calc(0 0 0 0);
 $side-nav-list-position: right;
 $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+$button-tny: rem-calc(0);
+$button-margin-bottom: rem-calc(0);
+
 .custom-side-nav {
   @include side-nav(
     $divider-color: #333,
