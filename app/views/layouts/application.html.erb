@@ -24,24 +24,13 @@
       <div class="large-3 pull-9 columns sidebar">
         <%= link_to image_tag("logo.svg"), root_path %>
         <%= render "categories/categories.html.erb" %>
+
+        <ul class="custom-side-nav ">
+          <li><%= link_to "Contact Us", contact_path %></li>
+          <li><%= link_to "About", about_path %></li>
+        </ul>
       </div>
     </div>
-    <footer class="row">
-      <div class="large-12 columns">
-        <hr/>
-        <div class="row">
-          <div class="large-6 columns">
-            <p>© A Vision Studio, 2014</p>
-          </div>
-          <div class="large-6 columns">
-            <ul class="inline-list right">
-              <li><%= link_to "/Contact Us", contact_path %></li>
-              <li><%= link_to "/About", about_path %></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
     <%= javascript_include_tag "application" %>
   </body>
 </html>
