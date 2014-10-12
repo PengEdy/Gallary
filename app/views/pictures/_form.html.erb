@@ -32,6 +32,8 @@
     <%= f.file_field :photo %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :class => "button success small" %>
+    &nbsp;&nbsp;&nbsp;
+    <%= link_to "Back", admin_path, :class => "button secondary small" %>
   </div>
 <% end %>
