@@ -1,3 +1,15 @@
-<%= link_to "New Author", new_author_path %><br>
-<%= link_to "New Category", new_category_path %><br>
-<%= link_to "New Picture", new_picture_path %><br>
+<div class="admin-index">
+  <%= render 'side' %>
+
+  <div class="large-9 columns">
+    <div class="row">
+      <%= render file: 'authors/index.html.erb'%>
+    </div>
+    <div class="row">
+      <%= render file: 'categories/index.html.erb' %>
+    </div>
+    <div class="row">
+
+    </div>
+  </div>
+</div>
