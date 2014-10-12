@@ -20,6 +20,10 @@ $button-margin-bottom: rem-calc(0);
   );
 }
 
+.side-btn {
+  padding: 16px 15px 17px 15px;
+}
+
 hr {
   border-color: #333;
 }
@@ -90,3 +94,10 @@ h1,h2,h3,h4 {
   color: white;
 }
 
+.custom-btn {
+  margin: 0 0 0 0;
+}
+
+.footer-info {
+  color: white;
+}
