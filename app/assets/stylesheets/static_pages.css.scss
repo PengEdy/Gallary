@@ -98,6 +98,9 @@ h1,h2,h3,h4 {
   margin: 0 0 0 0;
 }
 
-.footer-info {
+.footer-info, .new_picture, .edit_picture, .new_author, .edit_author, .new_category, .edit_category {
   color: white;
+  label {
+    color: white;
+  }
 }
