@@ -20,7 +20,7 @@
       <%= @picture.description %>
     </p>
     <p>
-      <%= image_tag(@picture.photo_url, :width => 800) if @picture.photo.present? %>
+      <%= image_tag(@picture.photo_url(:thumb) ) if @picture.photo.present? %>
     </p>
 
 </div>

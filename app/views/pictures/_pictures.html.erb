@@ -7,7 +7,7 @@
     slide_number:false;">
     <% @pictures.each do |pic| %>
     <li>
-      <%= image_tag(pic.photo_url, alt: pic.name) %>
+      <%= image_tag(pic.photo.url, alt: pic.name) %>
       <div class="orbit-caption">
         <div class="row">
           <div class="large-7 columns">
