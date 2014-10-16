@@ -1,9 +1,4 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+#System Requires
 
 * Ruby version: 2.0.0
 
@@ -13,7 +8,7 @@ Things you may want to cover:
 
 * Requires: Mini Magick
 
-== Setup
+#Setup
 ```
 bundle install
 rake db:setup
