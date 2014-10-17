@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
+  get '/contact' => 'messages#new'
+  resources :messages
   resources :authors
-
   devise_for :users
   resources :pictures
   resources :categories
   get '/about' => 'static_pages#about'
-  get '/contact' => 'static_pages#contact'
   get '/admin' => 'static_pages#admin'
   root 'pictures#index'
 
