@@ -14,32 +14,32 @@
 ActiveRecord::Schema.define(version: 20141017111523) do
 
   create_table "authors", force: true do |t|
-    t.string   "name"
+    t.string   "name",       null: false
     t.text     "info"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "categories", force: true do |t|
-    t.string   "name"
+    t.string   "name",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "messages", force: true do |t|
-    t.string   "name"
-    t.string   "email"
+    t.string   "name",       null: false
+    t.string   "email",      null: false
     t.integer  "phone"
-    t.text     "content"
+    t.text     "content",    null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "pictures", force: true do |t|
-    t.string   "name"
-    t.integer  "category_id"
+    t.string   "name",        null: false
+    t.integer  "category_id", null: false
     t.text     "description"
-    t.string   "photo"
+    t.string   "photo",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "author_id"
