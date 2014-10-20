@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   devise_for :users
   resources :pictures
   resources :categories
-  get '/about' => 'static_pages#about'
   get '/admin' => 'static_pages#admin'
   root 'pictures#index'
 
