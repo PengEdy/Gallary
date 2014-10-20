@@ -6,6 +6,6 @@
     <li><%= link_to "New Author", new_author_path, :class => "button side-btn" %></li>
     <li><%= link_to "New Categorie", new_category_path, :class => "button side-btn" %></li>
     <li><%= link_to "New Picture", new_picture_path, :class => "button side-btn" %></li>
-    <li><a href="#" class="button alert side-btn">Quit</a></li>
+    <li><%= link_to "Quit", signout_path, method: "delete", :class => "button alert side-btn" %>
   </ul>
 </div>

@@ -4,8 +4,12 @@ Rails.application.routes.draw do
   resources :authors
   resources :pictures
   resources :categories
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
   get '/admin' => 'static_pages#admin'
   root 'pictures#index'
+  match '/signin', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

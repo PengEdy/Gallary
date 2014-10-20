@@ -1,0 +1,15 @@
+<% provide(:title, "Sign in") %>
+<h1>Sign in</h1>
+<div class="row">
+  <div class="center">
+    <%= form_for(:session, url: sessions_path) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, :placeholder => "Enter user name here" %>
+
+    <%= f.label :password %>
+    <%= f.password_field :password, :placeholder => "Enter password here" %>
+
+    <%= f.submit "Sign in", class: "button center" %>
+    <% end %>
+  </div>
+</div>

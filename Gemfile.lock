@@ -140,6 +140,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   carrierwave
   coffee-rails (~> 4.0.0)
   devise
