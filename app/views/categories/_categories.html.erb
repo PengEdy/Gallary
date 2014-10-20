@@ -3,12 +3,11 @@
   <li><br></li>
   <ul class="custom-side-nav">
     <% Category.all.each do |category| %>
-    <li><%= link_to category.name.upcase, category_path(category), :class => "right" %></li>
+    <li><%= link_to category.name, category_path(category) %></li>
     <% end %>
   </ul>
   <ul class="custom-side-nav info">
     <li>&nbsp;</li>
-    <li><%= link_to "CONTACT US", contact_path, :class => "right" %></li>
-    <li><%= link_to "ABOUT", about_path, :class => "right" %></li>
+    <li><%= link_to "Contact Us", contact_path %></li>
   </ul>
 </div>
