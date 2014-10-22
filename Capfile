@@ -27,7 +27,7 @@ set :rvm_type, :user
 set :rvm_ruby_version, '2.1.3-p242'
 
 set :application, 'Gallary'
-set :repo_url, 'git@github.com:PengEdy/Gallary.git'
+set :repo_url, 'https://github.com/PengEdy/Gallary.git'
 set :deploy_to, 'home/deploy/Gallary'
 set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/budnle public/system public/develop_static}
