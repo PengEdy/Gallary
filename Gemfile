@@ -1,6 +1,5 @@
 source 'http://ruby.taobao.org'
 
-ruby '2.0.0'
 gem 'rails', '4.1.5'
 gem 'sqlite3', group: :development
 gem 'sass-rails', '~> 4.0.3'
