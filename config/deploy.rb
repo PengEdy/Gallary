@@ -2,7 +2,7 @@
 lock '3.1.0'
 
 set :application, 'Gallary'
-set :repo_url, 'https://github.com/PengEdy/Gallary.git'
+set :repo_url, 'https://gitcafe.com/PengEdy/Gallary.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
