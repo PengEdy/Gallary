@@ -43,7 +43,7 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/budnle public
 namespace :deploy do
   desc 'Restart application'
   task :restart do
-    on roles(:app), in: :sequance, wait: 5 do
+    on roles(:app), in: :sequence, wait: 5 do
       execute :touch, release_path.join('tmp/restart.txt')
     end
   end
