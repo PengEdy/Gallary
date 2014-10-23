@@ -84,9 +84,10 @@ h1,h2,h3,h4 {
 }
 
 .admin-index {
-  a {
+  a, label {
     color: white;
   }
+  color: white;
 }
 
 .admin-header-info {
@@ -111,4 +112,8 @@ footer {
 
 .sign_in_form {
   margin-top: 80px;
+}
+
+.message_content {
+
 }

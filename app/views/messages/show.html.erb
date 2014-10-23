@@ -1,24 +1,28 @@
-<p id="notice"><%= notice %></p>
+<div class="admin-index">
+  <%= render 'static_pages/side' %>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @message.name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @message.email %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @message.phone %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @message.content %>
-</p>
-
-<%= link_to 'Edit', edit_message_path(@message) %> |
-<%= link_to 'Back', messages_path %>
+  <div class="large-10 large-offset-2" >
+    <table>
+      <thead>
+        <tr><td colspan="5">Message from: <%= @message.name %></td></tr>
+      </thead>
+      <tbody>
+        <tr><td>Email</td><td colspan="4"><%= @message.email %></td></tr>
+        <tr><td>Phone</td><td colspan="4"><%= @message.phone %></td></tr>
+        <tr><td>Content</td><td colspan="4"><%= @message.content %></td></tr>
+        <tr>
+          <td><%= link_to 'Delete', @message, :class => "button tiny alert custom-btn", method: :deletem, data: {confirm: 'Are you sure?'} %></td>
+          <td colspan="4"><%= link_to 'Back', admin_path, :class => "button small secondary custom-btn" %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<footer>
+  <hr>
+  <p class="footer-info">A Vision Admin Center</p>
+</footer>
