@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   resources :authors
   resources :pictures
   resources :categories
-  resources :users
   resources :sessions, only: [:new, :create, :destroy]
   get '/admin' => 'static_pages#admin'
   get '/videos_play' => 'videos#play'
