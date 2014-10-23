@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141020110012) do
+ActiveRecord::Schema.define(version: 20141023025913) do
 
   create_table "authors", force: true do |t|
     t.string   "name",       null: false
@@ -54,5 +54,12 @@ ActiveRecord::Schema.define(version: 20141020110012) do
   end
 
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
+
+  create_table "videos", force: true do |t|
+    t.string   "title",      null: false
+    t.string   "source",     null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

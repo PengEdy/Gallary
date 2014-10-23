@@ -4,5 +4,6 @@ class StaticPagesController < ApplicationController
     @authors = Author.all
     @categories = Category.all
     @messages = Message.all
+    @videos = Video.all
   end
 end

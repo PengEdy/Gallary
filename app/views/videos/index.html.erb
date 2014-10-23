@@ -1,0 +1,25 @@
+<h3>Videos</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Source</th>
+      <th colspan="2">Options</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @videos.each do |video| %>
+      <tr>
+        <td><%= link_to video.title, video, :class => "button tiny success custom-btn" %>
+        <td><%= video.source %></td>
+        <td class="btn-tb"><%= link_to 'Edit', edit_video_path(video), :class => "button tiny custom-btn" %></td>
+        <td class="btn-tb"><%= link_to 'Delete', video, :class => "button tiny alert custom-btn", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
