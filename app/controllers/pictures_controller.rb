@@ -12,10 +12,6 @@ class PicturesController < ApplicationController
     end
   end
 
-  # GET /pictures/1
-  # GET /pictures/1.json
-  def show
-  end
 
   def pictures_edit
     @pictures = Picture.all
@@ -38,10 +34,8 @@ class PicturesController < ApplicationController
     respond_to do |format|
       if @picture.save
         format.html { redirect_to pictures_edit_path, notice: 'Picture was successfully created.' }
-        format.json { render :show, status: :created, location: @picture }
       else
         format.html { render :new }
-        format.json { render json: @picture.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -52,10 +46,8 @@ class PicturesController < ApplicationController
     respond_to do |format|
       if @picture.update(picture_params)
         format.html { redirect_to pictures_edit_path, notice: 'Picture was successfully updated.' }
-        format.json { render :show, status: :ok, location: @picture }
       else
         format.html { render :edit }
-        format.json { render json: @picture.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -66,7 +58,6 @@ class PicturesController < ApplicationController
     @picture.destroy
     respond_to do |format|
       format.html { redirect_to pictures_edit_path, notice: 'Picture was successfully destroyed.' }
-      format.json { head :no_content }
     end
   end
 

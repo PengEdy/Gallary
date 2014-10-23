@@ -8,10 +8,6 @@ class AuthorsController < ApplicationController
     @authors = Author.all
   end
 
-  # GET /authors/1
-  # GET /authors/1.json
-  def show
-  end
 
   # GET /authors/new
   def new
@@ -30,10 +26,8 @@ class AuthorsController < ApplicationController
     respond_to do |format|
       if @author.save
         format.html { redirect_to admin_path, notice: 'Author was successfully created.' }
-        format.json { render :show, status: :created, location: @author }
       else
         format.html { render :new }
-        format.json { render json: @author.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -44,10 +38,8 @@ class AuthorsController < ApplicationController
     respond_to do |format|
       if @author.update(author_params)
         format.html { redirect_to admin_path, notice: 'Author was successfully updated.' }
-        format.json { render :show, status: :ok, location: @author }
       else
         format.html { render :edit }
-        format.json { render json: @author.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -58,7 +50,6 @@ class AuthorsController < ApplicationController
     @author.destroy
     respond_to do |format|
       format.html { redirect_to admin_path, notice: 'Author was successfully destroyed.' }
-      format.json { head :no_content }
     end
   end
 

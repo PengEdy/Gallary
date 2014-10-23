@@ -1,3 +1,4 @@
+<% if sign_in? %>
 <h3>Categories
 </h3>
 
@@ -21,4 +22,6 @@
 </table>
 
 <br>
-
+<% else %>
+<%= render file: 'sessions/new.html.erb' %>
+<% end %>

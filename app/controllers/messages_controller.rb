@@ -18,9 +18,6 @@ class MessagesController < ApplicationController
     @message = Message.new
   end
 
-  # GET /messages/1/edit
-  def edit
-  end
 
   # POST /messages
   # POST /messages.json
@@ -30,10 +27,8 @@ class MessagesController < ApplicationController
     respond_to do |format|
       if @message.save
         format.html { redirect_to root_path, notice: 'Message was successfully created.' }
-        format.json { render :show, status: :created, location: @message }
       else
         format.html { render :new }
-        format.json { render json: @message.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -47,7 +42,6 @@ class MessagesController < ApplicationController
     @message.destroy
     respond_to do |format|
       format.html { redirect_to admin_path, notice: 'Message was successfully destroyed.' }
-      format.json { head :no_content }
     end
   end
 

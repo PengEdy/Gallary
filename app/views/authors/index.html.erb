@@ -1,3 +1,4 @@
+<% if sign_in? %>
 <h3>Authors
 </h3>
 
@@ -21,3 +22,6 @@
   </tbody>
 </table>
 <br>
+<% else %>
+<%= render file 'sessions/new.html.erb' %>
+<% end %>

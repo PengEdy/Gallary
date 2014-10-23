@@ -1,3 +1,4 @@
+<% if sign_in? %>
 <h3>Messages</h3>
 
 <table>
@@ -27,3 +28,6 @@
 </table>
 
 <br>
+<% else %>
+<%= render file 'sessions/new.html.erb' %>
+<% end %>

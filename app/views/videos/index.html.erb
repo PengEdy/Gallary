@@ -1,3 +1,4 @@
+<% if sign_in? %>
 <h3>Videos</h3>
 
 <table>
@@ -22,4 +23,6 @@
 </table>
 
 <br>
-
+<% else %>
+<%= render file: 'sessions/new.html.erb' %>
+<% end %>
