@@ -20,7 +20,7 @@
         <td><%= message.content %></td>
         <td class="btn-tb"><%= link_to 'Show', message, :class => "button tiny custom-btn" %></td>
         <td class="btn-tb"><%= link_to 'Edit', edit_message_path(message), :class => "button tiny custom-btn" %></td>
-        <td class="btn-tb"><%= link_to 'Destroy', message, :class => "button tiny alert custom-btn", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="btn-tb"><%= link_to 'Delete', message, :class => "button tiny alert custom-btn", method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
       </tr>
     <% end %>

@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   get '/admin' => 'static_pages#admin'
-  get '/videos_phay' => 'videos#play'
+  get '/videos_play' => 'videos#play'
+  get '/pictures_edit' => 'pictures#pictures_edit'
   root 'pictures#index'
   match '/signin', to: 'sessions#new', via: 'get'
   match '/signout', to: 'sessions#destroy', via: 'delete'

@@ -1,9 +1,0 @@
-<div class="single-pic">
-  <% @pictures.each do |pic| %>
-  <p><strong><%= pic.name %></strong></p>
-  <%= image_tag(pic.photo_url(:thumb), alt: pic.name)  %>
-  <%= link_to "Edit", edit_picture_path(pic), :class => "button tiny custom-btn" %>
-  &nbsp;&nbsp;&nbsp;
-  <%= link_to "Delete", pic, :class => "button tiny alert custom-btn", method: :delete, data: {confirm: 'Are you sure?'} %>
-  <% end %>
-</div>
