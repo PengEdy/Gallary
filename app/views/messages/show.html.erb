@@ -13,7 +13,7 @@
         <tr><td>Phone</td><td colspan="4"><%= @message.phone %></td></tr>
         <tr><td>Content</td><td colspan="4"><%= @message.content %></td></tr>
         <tr>
-          <td><%= link_to 'Delete', @message, :class => "button tiny alert custom-btn", method: :deletem, data: {confirm: 'Are you sure?'} %></td>
+          <td><%= link_to 'Delete', @message, :class => "button tiny alert custom-btn", method: :delete, data: {confirm: 'Are you sure?'} %></td>
           <td colspan="4"><%= link_to 'Back', admin_path, :class => "button small secondary custom-btn" %></td>
         </tr>
       </tbody>
