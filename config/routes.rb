@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  resources :videos
 
   get '/contact' => 'messages#new'
-  resources :messages
-  resources :authors
-  resources :pictures
+  resources :messages, only: [:index, :show, :new, :create, :destroy]
+  resources :videos
+  resources :authors, only: [:index, :new, :edit, :create, :update, :destroy]
+  resources :pictures, only: [:index, :new, :edit, :create, :update, :destroy]
   resources :categories
   resources :sessions, only: [:new, :create, :destroy]
   get '/admin' => 'static_pages#admin'
