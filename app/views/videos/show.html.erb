@@ -1,14 +1,20 @@
 <% if sign_in? %>
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @video.title %>
-</p>
-
-<p>
-  <iframe width="560" height="315" src="<%= @video_src %>" frameborder="0" allowfullscreen></iframe>
-</p>
+<div class="admin-index">
+  <%= render "static_pages/side" %>
+  <div class="large-9 columns">
+    <h3><%= @video.title %></h3>
+    <p>
+      <iframe width="700" height="394" src="<%= @video_src %>" frameborder="0" allowfullscreen></iframe>
+    </p>
+  </div>
+</div>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<footer>
+  <hr>
+  <p class="footer-info">A Vision Admin Center</p>
+</footer>
 <% else %>
 <%= render file: 'sessions/new.html.erb' %>
 <% end %>
