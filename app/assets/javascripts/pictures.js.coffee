@@ -8,7 +8,7 @@ $(document).foundation({
     pause_on_hover: false,
     animation_speed: 400,
     navigation_arrows: false,
-    bullets: true,
+    bullets: false,
     slide_number: false
   }
 })
