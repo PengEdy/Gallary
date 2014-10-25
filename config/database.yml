@@ -25,6 +25,6 @@ production:
   pool: 5
   timeout: 5000
   encoding: unicode
-  database: deploy
+  database: vision
   username: deploy
   password: deploy

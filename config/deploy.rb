@@ -2,7 +2,7 @@
 lock '3.1.0'
 
 set :application, 'Gallary'
-set :repo_url, 'https://gitcafe.com/PengEdy/Gallary.git'
+set :repo_url, 'https://github.com/PengEdy/Gallary.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
@@ -38,7 +38,7 @@ set :rvm_type, :user
 set :rvm_ruby_version, '2.1.3'
 
 set :deploy_to, '/home/deploy/Gallary'
-set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml config/secrets.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/budnle public/system public/develop_static}
 namespace :deploy do
   desc 'Restart application'
