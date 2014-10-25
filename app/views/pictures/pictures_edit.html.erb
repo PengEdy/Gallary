@@ -17,7 +17,7 @@
         <tr>
           <td><%= image_tag(pic.photo.thumb.url, :class => "th" ) if pic.photo.present? %></td>
           <td><%= pic.name %></td>
-          <td><%= pic.author %></td>
+          <td><%= pic.author.name %></td>
           <td class="btn-tb"><%= link_to 'Edit', edit_picture_path(pic), :class => "button tiny custom-btn" %></td>
           <td class="btn-tb"><%= link_to 'Delete', pic, :class => "button tiny alert custom-btn", method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
