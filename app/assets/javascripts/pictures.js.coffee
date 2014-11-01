@@ -20,3 +20,10 @@ $ ->
     else
       $(this).text("More")
     $('.pic-info').toggle()
+
+  $('.orbit-caption').hide()
+
+  $('.example-orbit').mouseover ->
+    $('.orbit-caption').show()
+  $('.example-orbit').mouseout ->
+    $('.orbit-caption').hide()
