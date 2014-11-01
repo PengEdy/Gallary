@@ -18,7 +18,7 @@ puts "8 categories generated."
 # Generate Picture
 
 # B.B. Pictures
-23.times do |n|
+14.times do |n|
   pic = Picture.new
   pic.name = "BB#{n+1}"
   pic.category_id = rand(1..8)
@@ -31,7 +31,7 @@ end
 puts "Pictures of B.B. generated."
 
 # Qian Chen Picture
-26.times do |n|
+18.times do |n|
   pic = Picture.new
   pic.name = "CQ#{n+1}"
   pic.category_id = rand(1..8)
