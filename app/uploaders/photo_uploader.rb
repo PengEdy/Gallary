@@ -51,7 +51,8 @@ class PhotoUploader < CarrierWave::Uploader::Base
   # Avoid using model.id or version_name here, see uploader/store.rb for details.
   def filename
     if original_filename
-      @name ||= Digest::MD5.hexdigest(current_path)
+      # @name ||= Digest::MD5.hexdigest(current_path)
+      @name ||= Time.now.to_s
       "#{@name}.#{file.extension}"
     end
   end
