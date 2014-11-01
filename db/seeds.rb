@@ -50,3 +50,11 @@ Video.create({title: 'Video 03', source: 'ry_bNxXSc74'})
 Video.create({title: 'Video 04', source: 'M8p4FT-3gyw'})
 Video.create({title: 'Video 05', source: 'xS9XfqGfvjk'})
 puts "5 videos generated"
+
+# Generate Admin
+u = User.new
+u.remember_token = User.encrypt(User.new_remember_token)
+u.name = "admin"
+u.password = "foobar"
+u.password_confirmation = "foobar"
+u.save
