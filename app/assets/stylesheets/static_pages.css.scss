@@ -18,6 +18,13 @@ $button-margin-bottom: rem-calc(0);
     $link-color-hover: white,
     $font-size: rem-calc(14)
   );
+  li {
+    padding-top: 10px;
+    padding-buttom: 10px;
+    a:not(.button) {
+      padding-left: 0px;
+    }
+  }
 }
 
 .side-btn {
