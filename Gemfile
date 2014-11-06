@@ -17,6 +17,7 @@ gem 'mini_magick', '3.8.0'
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'newrelic_rpm'
 end
 
 gem 'bcrypt', '~> 3.1.7'
