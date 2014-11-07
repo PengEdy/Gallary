@@ -10,8 +10,6 @@ Category.create({name: 'Maternity'})
 Category.create({name: 'Baby&family'})
 Category.create({name: 'Portrait'})
 Category.create({name: 'Commercial'})
-Category.create({name: 'Service & Price'})
-Category.create({name: 'Promotion'})
 
 puts "8 categories generated."
 
