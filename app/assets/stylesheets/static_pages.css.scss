@@ -16,11 +16,11 @@ $button-margin-bottom: rem-calc(0);
     $divider-color: #333,
     $link-color: #999,
     $link-color-hover: white,
-    $font-size: rem-calc(14)
+    $font-size: rem-calc(16)
   );
   li {
-    padding-top: 10px;
-    padding-buttom: 10px;
+    padding-top: 18px;
+    padding-buttom: 18px;
     a:not(.button) {
       padding-left: 0px;
     }
