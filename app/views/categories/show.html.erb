@@ -1,2 +1,11 @@
-<%= render "pictures/pictures" %>
+<div class="large-10 push-2 columns pic-slide">
+  <ul>
+    <% @pictures.each do |pic| %>
+    <li>
+      <a href="<%= pic.photo.url %>"><%= image_tag(pic.photo.url, alt: pic.name) %></a>
+    </li>
+    <br><br>
+    <% end %>
+  </ul>
+</div>
 <%= render "categories" %>
