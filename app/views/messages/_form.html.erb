@@ -2,7 +2,6 @@
   <% if @message.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
-
       <ul>
       <% @message.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -10,24 +9,43 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+  <div class="row">
+    <div class="large-1 columns">
+      <%= f.label :name, :class => "right inline" %>
+    </div>
+    <div class="large-10 columns">
+      <%= f.text_field :name %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
+  <br>
+  <div class="row">
+    <div class="large-1 columns">
+      <%= f.label :email, :class => "right inline" %>
+    </div>
+    <div class="large-10 columns">
+      <%= f.text_field :email %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :phone %><br>
-    <%= f.text_field :phone %>
+  <br>
+  <div class="row">
+    <div class="large-1 columns">
+      <%= f.label :phone, :class => "right inline" %>
+    </div>
+    <div class="large-10 columns">
+      <%= f.text_field :phone %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_area :content %>
+  <br>
+  <div class="row">
+    <div class="large-1 columns">
+      <%= f.label :content, :class => "right inline" %>
+    </div>
+    <div class="large-10 columns">
+      <%= f.text_area :content %>
+    </div>
   </div>
-  <div class="actions">
+  <br><br>
+  <div class="actions text-center">
     <%= f.submit :class => "button success small" %>
     &nbsp;&nbsp;&nbsp;
     <%= link_to 'Back', root_path, :class => "button small secondary" %>
