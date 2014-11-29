@@ -6,9 +6,9 @@ class PicturesController < ApplicationController
   def index
     @category = Category.find_by(params[:id])
     if @category != nil
-      @pictures = @category.picture
-    else
       @pictures = Picture.all
+    else
+      @pictures = @category_id.Picture
     end
   end
 
